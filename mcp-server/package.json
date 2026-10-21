@@ -1,0 +1,41 @@
+{
+  "name": "arch-scout",
+  "version": "0.1.0",
+  "description": "Architectural Ecosystem Scout & Decision Gate MCP Server (Build vs. Reuse)",
+  "main": "dist/index.js",
+  "bin": {
+    "arch-scout": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "claude-code",
+    "cursor",
+    "architecture",
+    "code-reuse",
+    "deps-dev",
+    "package-registry"
+  ],
+  "author": "Arch Gatekeeper Contributors",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
